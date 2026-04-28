@@ -1,0 +1,18 @@
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+}
+
+.logo-text{
+font-size:24px;
+font-weight:700;
+color:#22c55e;
+}
+
+.card{
+background:#1e293b;
+border-radius:16px;
+padding:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.2);
+}
