@@ -1,4 +1,99 @@
+@import 'dashboard.css';
+@import 'cabecalho.css';
+@import 'estiloIndex.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'dashboard.css';
+
+
+:root {
+  --bg:        #080b12;
+  --bg-card:   #0e1320;
+  --bg-card2:  #131929;
+  --bg-input:  #0c1019;
+  --border:    #1e2840;
+  --border-hi: #2a3a5c;
+
+  --text:      #edf0f7;
+  --text-2:    #7a8aaa;
+  --text-3:    #3a4a66;
+
+  /* Accents */
+  --blue:      #4f8ef7;
+  --blue-glow: rgba(79,142,247,.18);
+  --blue-dark: rgba(79,142,247,.08);
+
+  --green:     #22d47e;
+  --green-glow:rgba(34,212,126,.15);
+
+  --red:       #f75f5f;
+  --red-glow:  rgba(247,95,95,.15);
+
+  --yellow:    #f7c948;
+  --yellow-glow:rgba(247,201,72,.13);
+
+  --purple:    #a87cf7;
+  --purple-glow:rgba(168,124,247,.15);
+
+  --orange:    #f7854f;
+  --orange-glow:rgba(247,133,79,.13);
+
+  /* Platforms */
+  --indrive:#1ee070;
+  --particular:#ff6930;
+  --uber:#7c6fff;
+  --p99:#f7c948;
+
+  --r: 12px;
+  --r-lg: 18px;
+  --shadow: 0 4px 24px rgba(0,0,0,.5);
+  --shadow-lg: 0 8px 48px rgba(0,0,0,.7);
+  --sidebar: 248px;
+  --topbar: 64px;
+  --font: 'Inter', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button, input, select, textarea { font-family: var(--font); }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all .15s;
+    white-space: nowrap;
+}
+
+.btn-ghost {
+    background: var(--bg-card2);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(79, 142, 247, .35);
+}

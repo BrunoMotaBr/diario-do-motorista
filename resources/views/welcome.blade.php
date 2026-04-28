@@ -19,5 +19,200 @@
             </style>
         @endif
     </head>
-    <header>Olá</header>
+    <header class="cabecalho">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="ico">🚗</div>
+                <span>DriverFinance</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#plataformas">Plataformas</a>
+            </div>
+
+            <div class="nav-ctas">
+                <x-botao corTexto="white"
+                    link="{{route('login')}}"
+                    class="btn-ghost btn-sm"
+                />
+                <x-botao cor="var(--blue)"
+                    texto="Começar grátis →"
+                    corTexto="white"
+                    link="{{route('register')}}"
+                    class="btn-primary btn-sm"
+                />
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <body>
+            <section class="conteudo paginaInicial">
+                <div class="bg-imagem">
+                    <img src="{{ asset('imgs/bgImg.png') }}" alt="Imagem de fundo">
+                    <video></video>
+                </div>
+                <div style="display: flex;text-align: center;">
+                    <div class="hero" style="background-color: rgba(0, 0, 0, 0.671); margin:50px auto; max-width: 700px;">
+                        <div class="hero-eyebrow">
+                        <div class="dot"></div>
+                            Para motoristas de aplicativo
+                        </div>
+                        <h1>
+                            Controle total das suas<br>
+                            <span class="grad">finanças na estrada</span>
+                        </h1>
+                        <p>
+                            Registre corridas, controle despesas e veja seu lucro real.
+                            Tudo em um painel profissional feito para quem trabalha com Uber, 99, InDrive e corridas particulares.
+                        </p>
+                        <div class="hero-ctas">
+                            <a class="btn btn-primary btn-lg" href="login.html">
+                                🚀 Criar conta grátis
+                            </a>
+                            <a class="btn btn-outline btn-lg" href="login.html">
+                                Ver demonstração →
+                            </a>
+                        </div>
+                        <div class="hero-note">
+                            ✓ Sem cartão de crédito &nbsp;·&nbsp; ✓ Setup em 2 minutos &nbsp;·&nbsp; ✓ 100% gratuito
+                        </div>
+                        <div class="platforms">
+                            <span>Compatível com</span>
+                            <div class="plat-tag uber">🟣 Uber</div>
+                            <div class="plat-tag p99">🟡 99</div>
+                            <div class="plat-tag indrive">🟢 InDrive</div>
+                            <div class="plat-tag partic">🟠 Particular</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="funcionalidades">
+                <div class="section-label">Funcionalidades</div>
+                    <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+                        <div>
+                            <div class="section-title">Tudo que você precisa<br>para gerenciar sua renda</div>
+                            <div class="section-desc">Ferramentas simples e diretas para motoristas que querem saber exatamente quanto ganham e quanto gastam.</div>
+                        </div>
+                    <x-botao cor="var(--blue)"
+                        texto="Começar já"
+                        corTexto="white"
+                        link="{{route('register')}}"
+                        class="btn-primary btn-sm"
+                    />
+                    </div>
+
+                <div class="features-grid">
+
+                    <div class="feat-card" style="--feat-glow: rgba(34,212,126,.08);">
+                        <div class="feat-ico ico-green">💵</div>
+                        <h3>Registro de Corridas</h3>
+                        <p>Cadastre cada corrida com plataforma, valor, horário e forma de pagamento. Dinheiro, cartão ou Pix.</p>
+                    </div>
+
+                    <div class="feat-card" style="--feat-glow: rgba(247,95,95,.08);">
+                        <div class="feat-ico ico-red">💸</div>
+                        <h3>Controle de Despesas</h3>
+                        <p>Registre combustível, pedágio, alimentação, manutenção e outros custos. Saiba para onde vai seu dinheiro.</p>
+                    </div>
+
+                    <div class="feat-card" style="--feat-glow: rgba(79,142,247,.08);">
+                        <div class="feat-ico ico-blue">📊</div>
+                        <h3>Dashboard em Tempo Real</h3>
+                        <p>Veja seus ganhos de hoje, da semana e do mês. Gráfico de receitas vs despesas dos últimos 7 dias.</p>
+                    </div>
+
+                    <div class="feat-card" style="--feat-glow: rgba(168,124,247,.08);">
+                        <div class="feat-ico ico-purple">📈</div>
+                        <h3>Relatórios Completos</h3>
+                        <p>Filtre por período, compare plataformas, veja médias diárias e semanais. Lucro calculado automaticamente.</p>
+                    </div>
+
+                    <div class="feat-card" style="--feat-glow: rgba(247,201,72,.08);">
+                        <div class="feat-ico ico-yellow">🏆</div>
+                        <h3>Comparativo de Apps</h3>
+                        <p>Descubra qual plataforma paga mais. Compare Uber x 99 x InDrive x Particular em um único lugar.</p>
+                    </div>
+
+                    <div class="feat-card" style="--feat-glow: rgba(247,133,79,.08);">
+                        <div class="feat-ico ico-orange">🔒</div>
+                        <h3>Dados Privados e Seguros</h3>
+                        <p>Sistema de login protegido. Seus dados são exclusivamente seus, sem compartilhamento com ninguém.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section class="plat-section" id="plataformas">
+                <div style="margin-top:80px;">
+                    <div class="section-label">Plataformas</div>
+                    <div class="section-title">Funciona com os apps<br>que você já usa</div>
+                    <div class="section-desc">Suporte completo para as 4 principais plataformas do mercado brasileiro.</div>
+                </div>
+
+                <div class="plat-cards">
+                    <div class="plat-big uber">
+                        <div class="pb-name">Plataforma</div>
+                        <div class="pb-icon">🟣</div>
+                        <div class="pb-label">Uber</div>
+                        <div class="pb-desc">A maior plataforma de transporte. Rastreie cada corrida e analise seu desempenho.</div>
+                    </div>
+
+                    <div class="plat-big p99">
+                        <div class="pb-name">Plataforma</div>
+                        <div class="pb-icon">🟡</div>
+                        <div class="pb-label">99</div>
+                        <div class="pb-desc">Popular no Brasil. Compare quanto a 99 representa no seu faturamento total.</div>
+                    </div>
+
+                    <div class="plat-big indrive">
+                        <div class="pb-name">Plataforma</div>
+                        <div class="pb-icon">🟢</div>
+                        <div class="pb-label">InDrive</div>
+                        <div class="pb-desc">Negocie e registre. Acompanhe o ticket médio das corridas InDrive separado.</div>
+                    </div>
+
+                    <div class="plat-big particular">
+                        <div class="pb-name">Plataforma</div>
+                        <div class="pb-icon">🟠</div>
+                        <div class="pb-label">Particular</div>
+                        <div class="pb-desc">Clientes fixos e fora dos apps. Registre corridas particulares e veja o impacto no lucro.</div>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
+
+            <section class="cta-section">
+                <div class="hero-eyebrow" style="margin-bottom:20px;">
+                    <div class="dot"></div>
+                    Comece agora mesmo
+                </div>
+                <h2>Pare de adivinhar.<br>Saiba exatamente quanto você ganha.</h2>
+                <p>Configure em 2 minutos e comece a registrar suas corridas hoje.</p>
+                <div style="display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;">
+                    <x-botao corTexto="white"
+                        link="{{route('register')}}"
+                        class="btn-primary btn-sm"
+                        texto="🚀 Criar conta grátis"
+                    />
+                    <x-botao cor="var(--blue)"
+                        texto="Entrar na minha conta"
+                        corTexto="white"
+                        link="{{route('login')}}"
+                        class="btn-ghost btn-sm"
+                    />
+                </div>
+                <div class="hero-note" style="justify-content:center; margin-top:20px;">
+                    ✓ 100% gratuito &nbsp;·&nbsp; ✓ Sem instalação &nbsp;·&nbsp; ✓ Funciona no celular
+                </div>
+            </section>
+        </body>
+        <footer>
+            <div class="brand">
+                <span>🚗</span> DriverFinance
+            </div>
+            <div>Feito para motoristas brasileiros · 2026</div>
+        </footer>
+    </main>
 </html>

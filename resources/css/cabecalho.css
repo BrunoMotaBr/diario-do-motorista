@@ -1,0 +1,75 @@
+.cabecalho{
+    height: 68px;
+}
+.cabecalho nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    height: 74px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8, 11, 18, .85);
+    backdrop-filter: blur(14px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.nav-brand .ico {
+    width: 36px;
+    height: 36px;
+    background: var(--blue-dark);
+    border: 1px solid rgba(79, 142, 247, .35);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    box-shadow: 0 0 16px rgba(79, 142, 247, .15);
+}
+
+.nav-brand span {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -.3px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+.nav-links a {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--text-2);
+    padding: 7px 14px;
+    border-radius: 8px;
+    transition: all .15s;
+    cursor: pointer;
+}
+
+.nav-links a:hover{
+    color: var(--text-1);
+    background-color: var(--bg-input);
+}
+
+.nav-ctas{
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
