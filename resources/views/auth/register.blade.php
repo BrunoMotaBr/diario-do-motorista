@@ -32,7 +32,7 @@
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
+            <x-text-input id="password_confirmation" class="block mt-1 w-full py-[11px] px-[14px]"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
 
@@ -44,7 +44,7 @@
                 {{ __('Already registered?') }}
             </a>
 
-            <x-primary-button class="ms-4">
+            <x-primary-button class="ms-4 btn-primary btn-sm">
                 {{ __('Register') }}
             </x-primary-button>
         </div>

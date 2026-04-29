@@ -14,7 +14,15 @@ class RideController extends Controller
      */
     public function index()
     {
-        //
+        $rides = Ride::with('platform')
+        ->where('user_id', Auth::id())
+        ->latest()
+        ->get();
+
+        return view(
+            'rides.index',
+            compact('rides')
+        );
     }
 
     /**
@@ -40,7 +48,6 @@ class RideController extends Controller
             'valor'=>'required',
             'data_corrida'=>'required',
             'quantidade_km'=>'nullable',
-            'forma_pagamento'=>'required',
             'tempo_online_minutos'=>'nullable',
             'observacoes'=>'nullable'
         ]);
@@ -51,7 +58,7 @@ class RideController extends Controller
 
         return redirect()
         ->route('corridas.index')
-        ->with('success','Corrida cadastrada');
+        ->with('success','Registro cadastrada');
     }
 
     /**

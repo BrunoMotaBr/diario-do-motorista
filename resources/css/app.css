@@ -14,6 +14,14 @@
   --bg-input:  #0c1019;
   --border:    #1e2840;
   --border-hi: #2a3a5c;
+  --principal-gradiente: radial-gradient(ellipse 60% 50% at 15% 55%, rgba(79,142,247,.07) 0%, transparent 70%),
+                        radial-gradient(ellipse 50% 40% at 85% 20%, rgba(168,124,247,.05) 0%, transparent 60%),
+                        radial-gradient(ellipse 40% 60% at 70% 80%, rgba(34,212,126,.04) 0%, transparent 60%);
+  --principal-gradiente-verde:
+    radial-gradient(ellipse 60% 50% at 15% 55%, rgba(20, 83, 45, 0.15) 0%, transparent 70%), /* Verde Floresta */
+    radial-gradient(ellipse 50% 40% at 85% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 60%), /* Esmeralda */
+    radial-gradient(ellipse 40% 60% at 70% 80%, rgba(52, 211, 153, 0.06) 0%, transparent 60%); /* Verde Menta Suave */
+
 
   --text:      #edf0f7;
   --text-2:    #7a8aaa;

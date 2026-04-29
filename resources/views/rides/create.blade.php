@@ -2,7 +2,7 @@
 
 <div class="container">
 
-<h1>Cadastrar Corrida</h1>
+<h1>Registrar Ganhos do Dia</h1>
 
 <form method="POST" action="{{ route('corridas.store') }}">
 
@@ -19,7 +19,7 @@
 </select>
 
 
-<label>Valor</label>
+<label>Ganho do Dia (R$)</label>
 <input
 type="number"
 step="0.01"
@@ -28,7 +28,7 @@ required
 >
 
 
-<label>Data</label>
+<label>Data do Fechamento</label>
 <input
 type="date"
 name="data_corrida"
@@ -36,7 +36,7 @@ required
 >
 
 
-<label>KM</label>
+<label>Quilometragem do Dia</label>
 <input
 type="number"
 step="0.01"
@@ -44,16 +44,7 @@ name="quantidade_km"
 >
 
 
-<label>Forma Pagamento</label>
-
-<select name="forma_pagamento">
-<option>Pix</option>
-<option>Cartão</option>
-<option>Dinheiro</option>
-</select>
-
-
-<label>Tempo Online (min)</label>
+<label>Horas Trabalhadas (min)</label>
 <input
 type="number"
 name="tempo_online_minutos"
@@ -61,10 +52,13 @@ name="tempo_online_minutos"
 
 
 <label>Observações</label>
-<textarea name="observacoes"></textarea>
+<textarea
+name="observacoes"
+placeholder="Ex: dia fraco, muita dinâmica, chuva..."
+></textarea>
 
 <button type="submit">
-Salvar Corrida
+Salvar Fechamento
 </button>
 
 </form>

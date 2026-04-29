@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Platform;
 
 class Ride extends Model
 {
@@ -12,8 +13,11 @@ class Ride extends Model
         'valor',
         'data_corrida',
         'quantidade_km',
-        'forma_pagamento',
         'tempo_online_minutos',
         'observacoes'
     ];
+    public function platform()
+    {
+        return $this->belongsTo(Platform::class);
+    }
 }

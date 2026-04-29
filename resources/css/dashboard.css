@@ -6,10 +6,13 @@ body{
     padding: 0;
 }
 
-.logo-text{
-    font-size:24px;
-    font-weight:700;
-    color:#22c55e;
+.variavel-clara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: var(--text);
+    }
 }
 
 .card{

@@ -1,3 +1,4 @@
-<div class="logo-text">
-    🚗 Diário do Motorista
+<div {{ $attributes->merge(['class' => 'nav-brand']) }}>
+    <div class="ico">🚗</div>
+    <span>DriverFinance</span>
 </div>
